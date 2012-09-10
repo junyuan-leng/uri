@@ -63,9 +63,9 @@ def IdentifyUserRole(originalActivity, transportActivity, transAbility, fansNumb
 #生成oauth授权的url
 def login(request):
 
-    APP_KEY = '2069704765'
-    APP_SECRET = 'df0f20e2e816150802d1dcb1761ed2e1'
-    CALLBACK_URL = 'http://127.0.0.1:8000/test/'
+    APP_KEY = 'XXXX'
+    APP_SECRET = 'XXXXXXXXXXX'
+    CALLBACK_URL = 'XXXXX'
 
     client = APIClient(app_key=APP_KEY,app_secret=APP_SECRET,redirect_uri=CALLBACK_URL)
     login_url = client.get_authorize_url()
@@ -74,9 +74,9 @@ def login(request):
 #用户oauth授权之后跳转到test页面
 def test(request):
 
-    APP_KEY = '2069704765'
-    APP_SECRET = 'df0f20e2e816150802d1dcb1761ed2e1'
-    CALLBACK_URL = 'http://127.0.0.1:8000/test/'
+    APP_KEY = 'XXXX'
+    APP_SECRET = 'XXXXXXXXXXXXX'
+    CALLBACK_URL = 'XXXX'
 
     #获取access token
     client = APIClient(app_key=APP_KEY,app_secret=APP_SECRET,redirect_uri=CALLBACK_URL)
